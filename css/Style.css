@@ -1,0 +1,331 @@
+* ,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', 'arial' , sans-serif;  
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
+}
+/*CONTAINER STYLES*/
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.orange-btn {
+    padding: 1.2rem 2.4rem;
+    background-color: #ff7500;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+.orangr-hr {
+    width: 8rem;
+    height: 0.3rem;
+    background-color: #ff7500;
+    border: none;
+}
+
+
+/*HEADER SECTION STYLES*/
+.header {
+    padding: 1.6rem 0;
+    border-top: 5px solid #FF7500;
+}
+.header__container{
+    display: flex; 
+    align-items: center;
+}
+.header__logo {
+    text-decoration: none;
+    display: inline-block;
+}
+.header__logo-img {
+    width: 22.7rem;
+    height: 6rem;
+    display: flex;
+}
+.header__nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+.header__nav-list-item {
+    margin-right: 3.2rem;
+    position: relative;
+}
+.header__active::after {
+    content:"";
+    background-color:#ff7500;
+    height: 0.3rem;
+    width: 100%;
+    position: absolute;
+    bottom:-0.4rem;
+    left:0;
+}
+.header__nav-list-item a {
+    text-decoration: none;
+    font-weight: 500; 
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px; 
+    color: #000;
+}
+
+/* HERO SECTION STYLES */
+.HERO {
+    background-color:#252420;
+    color: #fff;
+    padding: 8rem 0 7.8rem 0;
+}
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__text-wrapper {
+    max-width: 387px;
+}
+
+.hero__title {
+    font-family: 'Roboto Condensed', 'arial' , sans-serif;
+    font-weight: 700;
+    font-size: 4rem; 
+    line-height: 4.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2.4rem; 
+}
+.hero__text {
+    margin-bottom: 3.2rem;
+}
+.hero__img {
+    width: 51rem;
+    height: 51rem;
+    border-radius: 8px;
+    filter: drop-shadow(2.4rem 2.4rem 0px rgba(255, 117, 0, 0.6));
+    margin-top: -4rem;
+    margin-bottom: -14rem;
+}
+
+/* FEATURES SECTION STYLR */
+.features {
+    padding: 21rem 0;
+    background-color: #fff;
+}
+
+.features__title {
+    font-family: 'Roboto Condensed', 'arial' , sans-serif;
+    font-weight: 700;
+    font-size: 7.2rem; 
+    line-height: 8.6rem;
+    margin-top: 2.4rem;
+    margin-bottom: 7.2rem; 
+}
+.features__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.features__list-item {
+    max-width: 340px;
+}
+.features__span {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 117, 0, 0.2) ;
+    margin-bottom: 3.2rem;
+}
+.features__list-title {
+    font-family: 'Roboto Condensed', 'arial' , sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem; 
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem; 
+}
+.features__list-text {
+    max-width: 314px;
+}
+
+/* SELE-SECTION STYLES*/
+.sale-section {
+    background-color: #252420;
+    padding: 6.4rem;
+    color: #fff;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12rem;
+    margin-bottom: 16rem;
+}
+.sale-section__text-wrepper {
+    max-width: 440px;
+}
+.sale-section__title {
+    max-width: 397px;
+    font-family: 'Roboto Condensed', 'arial' , sans-serif;
+    font-weight: 700;
+    font-size: 4rem; 
+    line-height: 4.8rem;
+    margin-bottom: 2.4rem;
+}
+.sale-section__text {
+    margin-bottom: 1.2rem;
+}
+.sale-section__text-2 {
+    margin-bottom: 2.4rem;
+}
+.orange-span {
+    color: #ff7500;
+}
+.sale-section__img {
+    width: 44rem;
+    height: 44rem;
+    border-radius: 1.2rem;
+    margin-top: -14.9rem;
+}
+
+/* FOOTER STYLES */
+.footer {
+    background-color: #fff;
+    padding: 5.6rem 0;
+}
+
+/* FOOTER-TOP STYLES */
+.footer-top__section {
+    margin-bottom: 4rem;
+}
+.footer-top__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__logo {
+    display: inline-block;
+}
+.footer__logo-img {
+    width: 22.7rem;
+    height: 6rem;
+    display: flex;
+}
+.footer-top__sm {
+    display: flex;
+    align-items: center; 
+    list-style-type: none;
+}
+.footer-top__sm-item {
+    margin-right: 1.6rem;
+}
+.footer-top__sm-item :last-child{
+    margin-right: 0;
+}
+.footer-top__sm-item a{
+    text-decoration: none;
+    color: #252420;
+    font-size: 2.4rem;
+}
+
+/* FOOTER-BOTTOM STYLES */
+
+.footer-hr {
+    height: 0.2rem;
+    background-color: rgba(37, 36, 32, 0.5);
+    margin-bottom: 6.4rem;
+}
+.footer-bottom__container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom__section {
+    width: 224px;
+
+}
+.footer-bottom__section-item {
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+}
+.footer-bottom__section-item :last-child{
+    margin-bottom: 0;
+}
+.footer-bottom__section-item a{
+    text-decoration: none;
+    color: #252420;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 1399.98px) {
+    /* HICHNIMA SHART EMAS EKAN , SIZ JIM O'TIRIN FAXRIYOR */
+}
+
+@media (max-width: 1199.98px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero__img {
+        display: none;
+    }
+    .sale-section__img {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header__logo {
+        margin-right: auto;
+    }
+    .header__nav-list {
+        display: none;
+    }
+    .header-btn {
+        display: none;
+    }
+    .features__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .features__list-item:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    .features {
+        padding: 10rem 0;
+    }
+    .footer-bottom__container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 6px;
+    }
+}
